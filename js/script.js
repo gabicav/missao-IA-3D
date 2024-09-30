@@ -49,13 +49,13 @@ function mostraAlternativas(){
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
-   if(opcaoSelecionada.proxima !== undefined) { 
-   atual = opcaoSelecionada.proxima;
-   }else {
-       mostraResultado();
-       return;
-   }
-     mostraPergunta();
+    if(opcaoSelecionada.proxima !== undefined) {
+        atual = opcaoSelecionada.proxima;
+    }else {
+        mostraResultado();
+        return;
+    }   
+    mostraPergunta();
 }
 
 function mostraResultado(){
